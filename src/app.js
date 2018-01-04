@@ -1,8 +1,11 @@
+// @flow
+
 import Koa from 'koa';
+import type Application from 'koa';
 
 import middlewares from './middlewares';
 
-const app = new Koa();
+const app: Application = new Koa();
 
 middlewares.errorLayer(app);
 middlewares.apiLayer(app);

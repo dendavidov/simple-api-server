@@ -1,6 +1,10 @@
+// @flow
+
+import type { Context } from 'koa';
+
 import packageJson from '../../package.json';
 
-const getIndex = ctx => {
+const getIndex = (ctx: Context): void => {
   ctx.body = {
     success: true,
     data: {
@@ -10,7 +14,7 @@ const getIndex = ctx => {
   };
 };
 
-const getFooList = ctx => {
+const getFooList = (ctx: Context): void => {
   ctx.body = {
     success: true,
     data: ['foo1', 'foo2', 'foo3', 'foo4'],

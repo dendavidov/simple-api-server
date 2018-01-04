@@ -1,7 +1,11 @@
+// @flow
+
+import type Application, { Context } from 'koa';
+
 import HTTPStatus from 'http-status';
 
-const errorLayer = app => {
-  app.use(async (ctx, next) => {
+const errorLayer = (app: Application): Application => {
+  app.use(async (ctx: Context, next: () => Promise<void>): Promise<void> => {
     try {
       await next();
     } catch (err) {

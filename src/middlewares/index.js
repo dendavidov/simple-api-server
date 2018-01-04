@@ -1,3 +1,5 @@
+// @flow
+
 import apiLayer from './api-middleware';
 import errorLayer from './error-middleware';
 

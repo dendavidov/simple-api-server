@@ -1,3 +1,5 @@
+// @flow
+
 import supertest from 'supertest';
 import packageJson from '../../package.json';
 
