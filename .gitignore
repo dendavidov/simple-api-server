@@ -1,0 +1,17 @@
+# Environment Configuration
+.env
+
+# IntelliJ IDE ignore
+.idea
+
+# Build output folders
+dist/
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Debug log from npm
+npm-debug.log
+
+# Dependency directory
+node_modules
